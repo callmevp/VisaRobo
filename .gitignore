@@ -1,15 +1,15 @@
 # Config files, logs and stuff
-YoneRobot/modules/helper_funcs/temp.txt
-YoneRobot/elevated_users.json
-YoneRobot/config.py
-YoneRobot/config.ini
+VisaRobo/modules/helper_funcs/temp.txt
+VisaRobo/elevated_users.json
+VisaRobo/config.py
+VisaRobo/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-YoneRobot/*.session
-YoneRobot/*.session-journal
+VisaRobo/*.session
+VisaRobo/*.session-journal
 Masha.session-journal
 *.session
 

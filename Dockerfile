@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/YoneRobot
-RUN git clone -b shiken https://github.com/noob-kittu/YoneRobot /root/YoneRobot
-WORKDIR /root/YoneRobot
+# Copy Python Requirements to /root/VisaRobo
+RUN git clone -b shiken https://github.com/noob-kittu/VisaRobo /root/VisaRobo
+WORKDIR /root/VisaRobo
 
-#Copy config file to /root/YoneRobot/YoneRobot
-COPY ./YoneRobot/sample_config.py ./YoneRobot/config.py* /root/YoneRobot/YoneRobot/
+#Copy config file to /root/VisaRobo/VisaRobo
+COPY ./VisaRobo/sample_config.py ./VisaRobo/config.py* /root/VisaRobo/VisaRobo/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","YoneRobot"]
+CMD ["python3","-m","VisaRobo"]
